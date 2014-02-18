@@ -38,29 +38,24 @@
    </div>
    <div class="container">
     <div class="page-header">
-     <h1>Automation</h1>
-     Jenkins Selenium template
-=========================
+     <h1>A basic template for setting up Selenium jobs in Jenkins</h1>
+    </div>
+     <p class="lead">1. Copy this directory to `/var/lib/jenkins/jobs/selenium-template`</p>
+    <p class="lead">2. Create a new job and select *Copy existing job*, enter `selenium-template` in the *Copy from* field.</p>
+    <p class="lead">3. Uncheck the *Disable Build* checkbox</p>
+    <p class="lead">4. Configure the *Source Code Management* build step to check out a copy of the repository containing your Selenium tests.</p>
+    <p class="lead">5. Modify the *SeleniumHQ htmlSuite Run* build step to match the location of your tests plans and to add any additional arguments</p>
+    <ol class="lead">To use this template in Jenkins you must install the *Hudson Seleniumhq* plugin.
 
-A basic template for setting up Selenium jobs in Jenkins.
-
-
-Installation
-------------
-
-1. Copy this directory to `/var/lib/jenkins/jobs/selenium-template`.
-2. Create a new job and select *Copy existing job*, enter `selenium-template` in the *Copy from* field.
-3. Uncheck the *Disable Build* checkbox
-4. Configure the *Source Code Management* build step to check out a copy of the repository containing your Selenium tests.
-5. Modify the *SeleniumHQ htmlSuite Run* build step to match the location of your tests plans and to add any additional arguments to JMeter.
-
-
-Requirements
-------------
-
-To use this template in Jenkins you must install the *Hudson Seleniumhq* plugin.
-
-The *X virtual framebuffer* package (xvfb)  must be installed on the Jenkins server.
+The *X virtual framebuffer* package (xvfb)  must be installed on the Jenkins server.</p>
+     <li><a href="installation.html">Install the required Jenkins plugins and PHP tools</a></li>
+     <li><a href="automation.html">Orchestrate the PHP tools using Apache Ant</a></li>
+     <li><a href="configuration.html">Configure the PHP tools for use with Jenkins job template</a></li>
+     <li><a href="integration.html">Create a Jenkins job for your PHP project</a></li>
+    </ol>
+   </div>
+  </div>
+  <div id="footer">
     </div>
    </div>
  </body>
